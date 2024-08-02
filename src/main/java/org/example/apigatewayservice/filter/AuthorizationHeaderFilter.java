@@ -56,7 +56,7 @@ public class AuthorizationHeaderFilter extends AbstractGatewayFilterFactory<Auth
         String subject=null;
         try {
             subject = Jwts.parser()
-                    .setSigningKey(env.getProperty("token.secret").getBytes(StandardCharsets.UTF_8))
+                    .setSigningKey(env.getProperty("token.secret").getBytes(StandardCharsets.UTF_8) )
                     .parseClaimsJws(jwt)
                     .getBody()
                     .getSubject();

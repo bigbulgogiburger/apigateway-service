@@ -2,4 +2,6 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-      name: ecommerce
+#      name: ecommerce
+      name: config-service
+

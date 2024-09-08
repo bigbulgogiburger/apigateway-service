@@ -94,8 +94,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 
-token:
-  secret: user_token_is_very_good
+#token:
+#  secret: user_token_is_very_good
 
 
 management:
